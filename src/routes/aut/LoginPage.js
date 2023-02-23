@@ -1,6 +1,15 @@
-import { useState } from "react";
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+/* import { useState } from "react"; */
 
-function Login() {
+
+export const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return <button onClick={() => loginWithRedirect()}>Login</button>
+};
+
+/* function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -44,3 +53,4 @@ function Login() {
 }
 
 export default Login;
+ */
