@@ -1,18 +1,25 @@
 import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 import { LoginButton } from "./aut/LoginPage";
+import { LogoutButton } from "./aut/LogoutPage";
+import { Profile } from "./aut/ProfilePage";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { EditTodoPage } from "./edit/EditTodoPage";
 import { HomePage } from "./home/HomePage";
 import { NewTodoPage } from "./new/NewTodoPage";
-import { LogoutButton } from "./aut/LogoutPage";
 
 
 function App() {
+  const { isAuthenticated } = useAuth0();
+
   return (
     <HashRouter>
-     <LoginButton />
-     <LogoutButton />
-    
+     {isAuthenticated ? (<>
+      <Profile />
+      <LogoutButton />
+     </>
+    ) : (<LoginButton />
+     )}
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/new" element={<NewTodoPage />} />
