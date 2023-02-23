@@ -7,19 +7,22 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { EditTodoPage } from "./edit/EditTodoPage";
 import { HomePage } from "./home/HomePage";
 import { NewTodoPage } from "./new/NewTodoPage";
+import './App.css';
 
 
 function App() {
   const { isAuthenticated } = useAuth0();
-
   return (
     <HashRouter>
-     {isAuthenticated ? (<>
-      <Profile />
-      <LogoutButton />
-     </>
-    ) : (<LoginButton />
-     )}
+     {isAuthenticated ? (
+          <>
+            <Profile />
+            <LogoutButton />
+          </>
+        ) : (
+          <LoginButton />
+        )}
+    
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/new" element={<NewTodoPage />} />
