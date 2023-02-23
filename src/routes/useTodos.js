@@ -71,7 +71,6 @@ function useTodos() {
       completedTodos, 
       searchValue, 
       searchedTodos,
-     /*  openModal, */
       getTodo,
     };
     

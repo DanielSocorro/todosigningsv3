@@ -9,12 +9,14 @@ import { NewTodoPage } from "./new/NewTodoPage";
 function App() {
   return (
    <HashRouter>
+    
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/new" element={<NewTodoPage />} />
-      <Route path="/edit/:id" element={<EditTodoPage />} />
-      <Route path="*" element={<p>Signing Not Found</p>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/new" element={<NewTodoPage />} />
+        <Route path="/edit/:id" element={<EditTodoPage />} />
+        <Route path="*" element={<p>Not Found</p>} />
     </Routes>
+   
    </HashRouter>
   );
 }
