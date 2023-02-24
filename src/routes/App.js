@@ -1,6 +1,6 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { LoginButton } from "./aut/LoginPage";
+import { SignInSide } from "./aut/LoginPage";
 import { LogoutButton } from "./aut/LogoutPage";
 import { Profile } from "./aut/ProfilePage";
 import { HashRouter, Route, Routes } from "react-router-dom";
@@ -26,7 +26,7 @@ function App() {
           <LogoutButton />
         </>
       ) : (
-        <LoginButton />
+        <SignInSide />
       )}
     </HashRouter>
   );

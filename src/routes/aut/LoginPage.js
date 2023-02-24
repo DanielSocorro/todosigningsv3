@@ -1,12 +1,54 @@
-import React from "react";
+import * as React from 'react';
+import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
+import CssBaseline from '@mui/material/CssBaseline';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useAuth0 } from "@auth0/auth0-react";
-/* import { useState } from "react"; */
 
-
-export const LoginButton = () => {
+function LoginButton() {
   const { loginWithRedirect } = useAuth0();
+  return <Button onClick={() => loginWithRedirect()}>Enter to Manchester United Signing's App </Button>
+}
 
-  return <Button variant="contained" onClick={() => loginWithRedirect()}>Login</Button>
-};
+export function SignInSide() {
 
+  return (
+    <ThemeProvider theme={createTheme()}>
+      <Grid container component="main" sx={{ height: '100vh' }}>
+        <CssBaseline />
+        <Grid
+          item
+          xs={false}
+          sm={4}
+          md={7}
+          sx={{
+            backgroundImage: 'url(https://source.unsplash.com/random)',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: (t) =>
+              t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+          <Box
+            sx={{
+              my: 8,
+              mx: 4,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+            </Avatar>
+                <LoginButton />
+              </Box>
+        </Grid>
+      </Grid>
+    </ThemeProvider>
+);
+}
