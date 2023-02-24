@@ -1,4 +1,5 @@
 import React from "react";
+import Button from '@mui/material/Button';
 import { useAuth0 } from "@auth0/auth0-react";
 /* import { useState } from "react"; */
 
@@ -6,51 +7,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 export const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <button onClick={() => loginWithRedirect()}>Login</button>
+  return <Button variant="contained" onClick={() => loginWithRedirect()}>Login</Button>
 };
 
-/* function Login() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const response = await fetch("/api/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, password }),
-    });
-    if (response.ok) {
-      const data = await response.json();
-      localStorage.setItem("token", data.token);
-      // redirect to protected page
-    } else {
-      alert("Wrong User Name or password.");
-    }
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        User Name:
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </label>
-      <label>
-        Password:
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </label>
-      <button type="submit">Iniciar sesión</button>
-    </form>
-  );
-}
-
-export default Login;
- */
