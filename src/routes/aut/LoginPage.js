@@ -14,7 +14,7 @@ function LoginButton() {
 }
 
 export function SignInSide() {
-
+  
   return (
     <ThemeProvider theme={createTheme()}>
       <Grid container component="main" sx={{ height: '100vh' }}>
@@ -28,11 +28,11 @@ export function SignInSide() {
             backgroundImage: 'url(https://source.unsplash.com/random)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
-              t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
+            t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-        />
+          />
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
@@ -42,7 +42,7 @@ export function SignInSide() {
               flexDirection: 'column',
               alignItems: 'center',
             }}
-          >
+            >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             </Avatar>
                 <LoginButton />
