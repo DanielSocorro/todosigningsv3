@@ -1,3 +1,10 @@
 img {
   display: flex;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 58px;
+  margin-left: 62%;
+  margin-top: 10%;
+  position: fixed;
 }
