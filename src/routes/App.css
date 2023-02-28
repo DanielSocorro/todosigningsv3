@@ -7,13 +7,41 @@ img {
 }
 
 .logomu {
-  left: 12%;
-  width: 168px;
+  left: 15%;
+  width: 100px;
   height: 163px;
-  top: -4%;
+  top: 11%;
 }
 .logods {
   width: 236px;
   height: auto;
- 
+  margin-top: 45px;
+}
+.btn {
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 60px;
+  bottom: 30%;
+  font-weight: bolder;
+  left: 31%;
+  margin-top: 40rem;
+  text-decoration: inherit;
+  padding: 40px;
+  height: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+.title{
+  position: absolute;
+  top: 31%;
+  left: 81%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  width: 30rem;
 }

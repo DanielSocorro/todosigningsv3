@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useAuth0 } from "@auth0/auth0-react";
@@ -8,24 +7,12 @@ import { useAuth0 } from "@auth0/auth0-react";
 function LoginButton() {
   const { loginWithRedirect } = useAuth0();
   return (
-    <Button 
-      sx={{
-        background: 'white',
-        color: 'black',
-        fontSize: '2.4rem',
-        borderRadius: '60px',
-        bottom: '30%',
-        fontWeight:'bolder',
-        left: '31%',
-        marginTop: '53rem',
-        textTransform: 'inherit',
-        padding: '56px',
-        height: '117px',
-      }}             
+    <button className='btn'
+              
       onClick={() => loginWithRedirect()}
     >
       Login with Gmail
-    </Button>
+    </button>
   );
 }
 
@@ -80,18 +67,7 @@ export function SignInSide() {
         alt="Android Chrome logo"
         className='logods'
       />
-      <h1
-        style={{
-          position: 'absolute',
-          top: '31%',
-          left: '82%',
-          transform: 'translateX(-50%)',
-          textAlign: 'center',
-          color: 'white',
-          fontSize: '3.1rem',
-          width: '30rem',
-        }}
-      >
+      <h1 className='title'>
         Manchester United Signing's app
       </h1>
      
