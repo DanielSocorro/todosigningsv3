@@ -14,13 +14,13 @@ function LoginButton() {
         color: 'black',
         fontSize: '2.4rem',
         borderRadius: '60px',
-        float: 'right',
+        bottom: '30%',
         fontWeight:'bolder',
-        marginRight: '100px',
+        left: '31%',
         marginTop: '53rem',
         textTransform: 'inherit',
-        padding: '36px',
-        height: '100px',
+        padding: '56px',
+        height: '117px',
       }}             
       onClick={() => loginWithRedirect()}
     >
@@ -70,28 +70,15 @@ export function SignInSide() {
           backdropFilter: 'blur(10px)',
         }}
       />
-      <img
+      <img 
         src="https://i.ibb.co/prrxrDr/manchester-united-fc-logo.png"
         alt="Manchester United logo"
-        sx={{
-          position: 'relative',
-          top: '-13%',
-          right: '1%',
-          width: '9%',
-          height: '12%',
-        }}
+        className='logomu'
       />
       <img
         src="https://i.ibb.co/Wzndr52/android-chrome-512x512.png"
         alt="Android Chrome logo"
-        sx={{
-          position: 'relative',
-          top: '2%',
-          left: '20%',
-          transform: 'translateX(-50%)',
-          width: '14%',
-          height: '18%',
-        }}
+        className='logods'
       />
       <h1
         style={{
@@ -101,7 +88,8 @@ export function SignInSide() {
           transform: 'translateX(-50%)',
           textAlign: 'center',
           color: 'white',
-          fontSize: '2.1rem',
+          fontSize: '3.1rem',
+          width: '30rem',
         }}
       >
         Manchester United Signing's app
