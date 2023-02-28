@@ -68,7 +68,7 @@ export function SignInSide() {
         className='logods'
       />
       <h1 className='title'>
-        Manchester United Signing's app
+        Manchester United signing's app
       </h1>
      
     <LoginButton />

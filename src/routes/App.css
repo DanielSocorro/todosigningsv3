@@ -10,10 +10,10 @@ img {
   left: 15%;
   width: 100px;
   height: 163px;
-  top: 11%;
+  top: 9%;
 }
 .logods {
-  width: 236px;
+  width: 200px;
   height: auto;
   margin-top: 45px;
 }
@@ -37,11 +37,90 @@ img {
 
 .title{
   position: absolute;
-  top: 31%;
+  top: 25%;
   left: 81%;
   transform: translateX(-50%);
   text-align: center;
   color: white;
-  font-size: 2.5rem;
-  width: 30rem;
+  font-size: 2.1rem;
+  width: 28rem;
+  line-height: 35px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 767px) {
+  img {
+    width: 60px;
+    height: 60px;
+    margin:auto;
+    top:10%;
+  }
+
+  .logomu {
+    left: 36%;
+    width: 5rem;
+    height: 5rem;
+    top: -4%;
+  }
+
+  .logods {
+    width: 8rem;
+    top:-10%;
+  }
+
+  .btn {
+    font-size: 1rem;
+    border-radius: 40px;
+    left: auto;
+    margin-top: 25rem;
+    padding: 20px;
+    height: 8px;
+  }
+
+  .title {
+    top: 29%;
+    left: 50%;
+    font-size: 1.8rem;
+    width: 22rem;
+    line-height: 30px;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  img {
+    width: 80px;
+    height: 80px;
+    margin-left: 30%;
+  }
+
+  .logomu {
+    left: 27%;
+    width: 6rem;
+    height: 6rem;
+    top: -10%;
+  }
+
+  .logods {
+    width: 9rem;
+    margin-left: 31rem;
+    top: -5rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    border-radius: 50px;
+    left: 31%;
+    margin-top: 35rem;
+    padding: 30px;
+    height: 8px;
+  }
+
+  .title {
+    top: 27%;
+    left: 80%;
+    font-size: 1.5rem;
+    width: 17rem;
+    line-height: 35px;
+  }
 }
