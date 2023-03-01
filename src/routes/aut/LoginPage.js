@@ -46,17 +46,7 @@ export function SignInSide() {
       }}
     >
       <CssBaseline />
-      <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          left: '60%',
-          width: '40%',
-          height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.75)',
-          backdropFilter: 'blur(10px)',
-        }}
-      />
+      <div className='background'/>
       <img 
         src="https://i.ibb.co/prrxrDr/manchester-united-fc-logo.png"
         alt="Manchester United logo"
