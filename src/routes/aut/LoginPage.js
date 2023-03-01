@@ -37,6 +37,7 @@ export function SignInSide() {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100vh',
+        width: '100vw',
         backgroundImage: 'url(https://i.ibb.co/WBYMGdX/manuntd.jpg)',
         backgroundRepeat: 'no-repeat',
         backgroundColor: (t) =>
