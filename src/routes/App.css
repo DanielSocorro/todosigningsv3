@@ -56,7 +56,17 @@ img {
   backdrop-filter: blur(10px);
 }
 .logoutbtn {
+  position: fixed;
   display: flex;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  bottom: 1rem;
+  border-radius: 2rem;
+  background-color: rgb(212, 0, 14);
+  color: white;
+  border: none;
 }
 
 /* Estilos para pantallas pequeñas */
@@ -113,15 +123,16 @@ img {
   }
 
   .logomu {
-    left: 27%;
+    left: 13rem;
     width: 6rem;
     height: 6rem;
-    top: -10%;
+    top: -7rem;
   }
 
   .logods {
     width: 9rem;
-    margin-left: 31rem;
+    margin-left: 36.5rem;
+    margin-right: auto;
     top: -5rem;
   }
 
