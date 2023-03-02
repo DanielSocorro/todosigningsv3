@@ -7,13 +7,13 @@ img {
 }
 
 .logomu {
-  left: 15%;
+  left: 12%;
   width: 100px;
   height: 163px;
-  top: 9%;
+  top: 2%;
 }
 .logods {
-  width: 200px;
+  width: 172px;
   height: auto;
   margin-top: 45px;
 }
@@ -37,7 +37,7 @@ img {
 
 .title{
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 81%;
   transform: translateX(-50%);
   text-align: center;
@@ -54,6 +54,9 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(10px);
+}
+.logoutbtn {
+  display: flex;
 }
 
 /* Estilos para pantallas pequeñas */
@@ -93,7 +96,6 @@ img {
     width: 22rem;
     line-height: 30px;
   }
-  
   .background {
     position: absolute;
     width: 100%;
