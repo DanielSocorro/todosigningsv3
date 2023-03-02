@@ -9,7 +9,7 @@ function useTodos() {
         sincronizeItem: sincronizeTodos,
         loading,
         error,
-      } = useLocalStorage('TODOS_V2', []);
+      } = useLocalStorage('TODOS_V3', []);
       const [searchValue, setSearchValue ] = React.useState('');
       const completedTodos = todos.filter((todo) => !!todo.completed).length;
       const totalTodos = todos.length;
