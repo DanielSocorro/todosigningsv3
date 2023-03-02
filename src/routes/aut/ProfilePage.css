@@ -44,8 +44,8 @@
     
     .greeting {
         position: relative;
-        left: 7rem;
-        bottom: 0.5rem;
+        left: 6.5rem;
+        bottom: -0.5rem;
         width: 10rem;
         font-size: 1.2rem;
     }
@@ -53,8 +53,9 @@
     .greeting p {
         position: relative;
         color: red;
-        left: 6rem;
-        bottom: 2.6rem;
+        left: 89px;
+        bottom: 41.6px;
+        font-size: 1.2rem;
     }
     
     .logoman {
