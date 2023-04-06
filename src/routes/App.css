@@ -5,17 +5,16 @@ img {
   margin-left: 62%;
   position: relative;
 }
-
 .logomu {
   left: 12%;
   width: 100px;
   height: 163px;
-  top: 6%;
+  top: 120px;
 }
 .logods {
   width: 172px;
   height: auto;
-  top: 5%;
+  top: 100px;
 }
 .btn {
   background: white;
